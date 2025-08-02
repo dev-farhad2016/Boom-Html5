@@ -1,0 +1,165 @@
+/*** 
+=============================================
+    Location Info Area Css
+=============================================
+***/
+.location-info-area {
+    position: relative;
+    display: block;
+    background: #f5f5f5;
+    padding: 120px 0 80px;
+    z-index: 10;
+}
+
+.single-location-info-box {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.single-location-info-box .img-holder {
+    position: relative;
+    display: block;
+}
+
+.single-location-info-box .img-holder .inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}
+
+.single-location-info-box .img-holder .inner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background: var(--thm-black);
+    transform: scale(1.0);
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transition: all 500ms ease 100ms;
+    z-index: 2;
+}
+
+.single-location-info-box .img-holder .inner img {
+    width: 100%;
+    transform: scale(1.0);
+    transition: all 700ms ease;
+}
+
+.single-location-info-box:hover .img-holder .inner:before {
+    opacity: 0.80;
+    transform: scale(1.0);
+}
+
+.single-location-info-box .img-holder .flag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.single-location-info-box .img-holder .flag img {
+    width: 100%;
+}
+
+
+
+.single-location-info-box .title-holder {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 25px 30px 39px;
+    z-index: 1;
+}
+
+.single-location-info-box .title-holder h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0 0 13px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.single-location-info-box .title-holder ul {
+    position: relative;
+    display: block;
+}
+
+.single-location-info-box .title-holder ul li {
+    position: relative;
+    display: block;
+    padding-left: 100px;
+    margin-bottom: 14px;
+}
+
+.single-location-info-box .title-holder ul li:last-child {
+    margin-bottom: 0;
+}
+
+.single-location-info-box .title-holder ul li .inner-title {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.single-location-info-box .title-holder ul li .inner-title h5 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.single-location-info-box .title-holder ul li .inner-text {
+    position: relative;
+    display: block;
+}
+
+.single-location-info-box .title-holder ul li .inner-text p {
+    margin: 0;
+}
+
+.single-location-info-box .title-holder ul li .inner-text p a {
+    color: var(--thm-gray);
+    transition: all 500ms ease;
+}
+
+.single-location-info-box .title-holder ul li .inner-text p a:hover {
+    color: var(--thm-base);
+}
+
+
+.single-location-info-box .title-holder ul li .inner-text .social-links {
+    position: relative;
+    display: block;
+}
+
+.single-location-info-box .title-holder ul li .inner-text .social-links a {
+    position: relative;
+    display: inline-block;
+    color: var(--thm-gray);
+    font-size: 18px;
+    transition: all 500ms ease;
+}
+
+.single-location-info-box .title-holder ul li .inner-text .social-links a+a {
+    margin-left: 15px;
+}
+
+.single-location-info-box .title-holder ul li .inner-text .social-links a:hover {
+    color: var(--thm-base);
+}

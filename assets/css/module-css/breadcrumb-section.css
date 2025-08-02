@@ -1,0 +1,118 @@
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb-area {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.breadcrumb-area-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.breadcrumb-area-bg:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--thm-black);
+    opacity: 0.50;
+    content: "";
+    z-index: -1;
+}
+
+.breadcrumb-area .inner-content {
+    position: relative;
+    display: block;
+    padding: 155px 0 150px;
+    text-align: center;
+    z-index: 10;
+}
+
+.breadcrumb-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.breadcrumb-menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-menu ul li {
+    position: relative;
+    float: none;
+    color: var(--thm-primary);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-right: 18px;
+    margin-right: 13px;
+    font-family: var(--thm-font-2);
+}
+
+.breadcrumb-menu ul li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.breadcrumb-menu ul li:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 2px;
+    width: 1px;
+    background: var(--thm-primary);
+    transform: rotate(25deg);
+}
+
+.breadcrumb-menu ul li:last-child:before {
+    display: none;
+}
+
+.breadcrumb-menu ul li a {
+    color: var(--thm-primary);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.breadcrumb-menu ul li:hover a,
+.breadcrumb-menu ul li.active {
+    color: var(--thm-base);
+}
+
+
+
+.breadcrumb-area .title {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.breadcrumb-area .title h2 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1.05em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
